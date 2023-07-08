@@ -1,0 +1,122 @@
+.logo
+{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+}
+body
+{
+ 
+    background: linear-gradient(to bottom, #2980b9, #6dd5fa);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+
+}
+.nav-link.active
+{
+ color: white !important;
+}
+
+.carousel-inner {
+    width: 1000px !important;
+    height: 500px !important; /* Adjust this value to your desired width */
+    margin: 0 auto !important; /* Center the container horizontally, if needed */
+  }
+ 
+
+  .carousel-inner div img{
+    width: 1000px;
+    height: 500px;
+  }
+
+  #carouselExampleIndicators
+  {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+
+  
+  .title {
+    font-size: 30px;
+    color:#f5efef;
+    text-shadow: 2px 2px 4px rgba(227, 214, 214, 0.5);
+    width: 60vw;
+    text-align: center;
+    
+  }
+  .my-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #4CAF50;
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-button:hover {
+    background-color: #45a049;
+    color: black;
+  }
+  
+  footer {
+    background-color: #dc2d2d;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .contain {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 120px;
+  }
+  
+  .social-media img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  footer p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  

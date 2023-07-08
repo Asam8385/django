@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{% static 'loginapp/Menu.css' %}">
+    <title>menu</title>
+</head>
+<body style="overflow-x: hidden; overflow-y: auto; " >
+    <div class="logo">
+        <img  src="{% static 'loginapp/download.png'%}" alt="hlo"/>
+       </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 " style="background-color: #46464b !important;  z-index: 1 !important; ">
+        <div class="container-fluid  ">
+          <button style="color: yellow !important;"  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 "  >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{% url 'index' %}">MENU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{% url 'book' %}">BOOK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{% url 'reserve' %}">RESERVE</a>
+                </li>
+              </ul>
+           
+          </div>
+          <span class="navbar-brand mb-0 h1" style="color: white !important;">Welcome to Little Lemon Booking Center</span>
+        </div>
+      </nav>
+    {% for i in data %}
+        <h1 style="margin-top: 20px;">{</h1>
+        {% for j in i.items %}
+        <h2 style="margin-left: 20px;">{{j}},</h2>
+        {%endfor%}
+        <h1>},</h1>
+    {% endfor%}
+</body>
+</html>

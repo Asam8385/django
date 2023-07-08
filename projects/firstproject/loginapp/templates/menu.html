@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{% static 'loginapp/Menu.css' %}">
+    <title>menu</title>
+</head>
+<body style="overflow-x: hidden; overflow-y: auto; " >
+    <div class="logo">
+        <img  src="{% static 'loginapp/download.png'%}" alt="hlo"/>
+       </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 " style="background-color: #46464b !important;  z-index: 1 !important; ">
+        <div class="container-fluid  ">
+          <button style="color: yellow !important;"  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 "  >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{% url 'index' %}">MENU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{% url 'book' %}">BOOK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{% url 'reserve' %}">RESERVE</a>
+                </li>
+              </ul>
+           
+          </div>
+          <span class="navbar-brand mb-0 h1" style="color: white !important;">Welcome to Little Lemon Booking Center</span>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" style = "background-color: steelblue; margin-top: 0px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'loginapp/LKD.jpg'%}" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'loginapp/Skiplagged-App-.png'%}" class="d-block " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'loginapp/Skyscanner-App.png'%}" class="d-block " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div style=" display: flex; justify-content: center; align-items: center; flex-direction: column; height: 600px;">
+        <h2 class="title">Welcome to the little Lemon booking center.Click the button and reserve your time</h2>
+
+        <a href="{% url 'book' %}" class="my-button">Click Me</a>
+
+
+      
+      
+      
+      </div>
+      <footer style="background-color: #46464b; bottom: 0;  ">
+        <div class="contain">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <p class="copyright">
+          &copy; 2023 Your Company Name. All rights reserved.
+        </p>
+      </footer>
+      
+        
+        
+</body>
+</html>
